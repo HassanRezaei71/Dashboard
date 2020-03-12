@@ -1,14 +1,14 @@
 @font-face {
-  src: url(/Assets/Fonts/Shabnam.ttf);
-  src: url(/Assets/Fonts/Shabnam.eot);
-  src: url(/Assets/Fonts/Shabnam-Bold.ttf);
-  src: url(/Assets/Fonts/Shabnam-Light.ttf);
-  src: url(/Assets/Fonts/Shabnam1.woff);
+  src: url(../Assets/Fonts/Shabnam.ttf);
+  src: url(../Assets/Fonts/Shabnam.eot);
+  src: url(../Assets/Fonts/Shabnam-Bold.ttf);
+  src: url(../Assets/Fonts/Shabnam-Light.ttf);
+  src: url(../Assets/Fonts/Shabnam1.woff);
   font-family: "shabnam";
 }
 
 html {
-  font-size: 100%;
+  font-size: 13px;
 }
 
 body {
@@ -28,7 +28,7 @@ main {
 }
 
 .menu {
-  width: 300px;
+  width: 280px;
   height: 100%;
   position: sticky;
   top: 0;
@@ -115,8 +115,8 @@ main {
 
 .main-content {
   width: calc(100% - 300px);
-  height: 97%;
-  padding: 15px;
+  height: 96%;
+  padding: 1%;
 }
 
 .card-list{
@@ -159,7 +159,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
+  width: 60px;
   height: 100%;
 }
 
@@ -204,16 +204,19 @@ main {
 }
 
 .text-blue{
+  font-size: 1rem;
   color: #6255e5;
   font-weight: 400;
 }
 
 .text-green{
+  font-size: 1rem;
   color: #41d29d;
   font-weight: 400;
 }
 
 .text-red{
+  font-size: 1rem;
   color: #e94442;
   font-weight: 400;
 }
