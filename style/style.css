@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  background-color: #f5f5f5;
   direction: rtl;
   font-family: "shabnam", Tahoma, sans-serif;
 }
@@ -39,12 +40,12 @@ main {
 }
 
 .menu-content {
-  width: 70%;
+  width: 100%;
   height: 100%;
 }
 
 .menu-detail {
-  margin: 60px 0 100px;
+  margin: 40px 0 60px;
 }
 
 .menu-content .clock {
@@ -63,7 +64,6 @@ main {
 
 .user-info {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -72,15 +72,35 @@ main {
   height: 50px;
   border-radius: 60px;
   margin-left: 15px;
+  margin-right: 60px;
+}
+
+.user {
+  width: 120px;
 }
 
 .user .name {
-  margin-bottom: 9px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
-.user .job {
+.user .user-job {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 0.9rem;
   color: #a3a3a3;
+}
+
+.menu-setting {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-setting ul {
+  width: 60%;
 }
 
 .menu-setting ul li {
@@ -90,12 +110,12 @@ main {
   margin-bottom: 25px;
 }
 
-.menu-setting ul li i {
+.menu-setting ul li i.icon {
   margin-right: -1.3em;
   margin-left: 0.9em;
 }
 
-.menu-setting ul li span {
+.menu-setting ul li span.menu-num {
   width: 1.1em;
   padding: 4px;
   font-size: 0.8rem;
@@ -109,22 +129,25 @@ main {
   color: #a3a3a3;
 }
 
+.caret {
+  padding: 4px;
+}
+
 .menu-setting .dashboard {
   color: #6355e6;
 }
 
 .main-content {
   width: calc(100% - 300px);
-  height: 96%;
-  padding: 1%;
+  padding: 15px;
 }
 
-.card-list{
+.card-list {
   width: 100%;
-  height: 12%;
+  margin-bottom: 15px;
 }
 
-.card-list ul{
+.card-list ul {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -134,136 +157,133 @@ main {
   align-items: center;
 }
 
-.card-list ul li{
+.card-list ul li {
   width: 24%;
   box-shadow: rgba(51, 49, 49, 0.1) 0.9px 0.9px 0.9px 0.9px;
   border-radius: 4px;
   overflow: hidden;
 }
 
-.card-list .card{
+.card-list .card {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.card-list .card .card-text{
+.card-list .card .card-text {
   width: 100%;
   padding: 15px;
   background-color: #ffffff;
 }
 
-.card-list .card .card-icon{
+.card-list .card .card-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 70px;
 }
 
-.card-icon img{
+.card-icon img {
   width: 80%;
 }
 
-.card .blue{
+.card .blue {
   background-color: #6170e3;
 }
 
-.card .orange{
+.card .orange {
   background-color: #fdbf36;
 }
 
-.card .red{
+.card .red {
   background-color: #f3467c;
 }
 
-.card .lightblue{
+.card .lightblue {
   background-color: #25c2f7;
 }
 
-.card .lightblue img{
+.card .lightblue img {
   width: 60%;
 }
 
-.card .medium-text{
+.card .medium-text {
   font-size: 0.9rem;
   margin-bottom: 10px;
   color: #a3a3a3;
 }
 
-.card .num-text{
+.card .num-text {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.card .detail-text{
-  font-size: 0.80rem;
+.card .detail-text {
+  font-size: 0.8rem;
   color: #a3a3a3;
 }
 
-.text-blue{
-  font-size: 1rem;
+.text-blue {
+  font-size: 1.1rem;
   color: #6255e5;
   font-weight: 400;
 }
 
-.text-green{
-  font-size: 1rem;
+.text-green {
+  font-size: 1.1rem;
   color: #41d29d;
   font-weight: 400;
 }
 
-.text-red{
-  font-size: 1rem;
+.text-red {
+  font-size: 1.1rem;
   color: #e94442;
   font-weight: 400;
 }
 
-.row1{
+.row1 {
   height: 50%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-bottom: 15px;
 }
 
-.box{
+.box {
   box-shadow: rgba(51, 49, 49, 0.1) 0.9px 0.9px 0.9px 0.9px;
   border-radius: 4px;
   padding: 20px;
-  width: 33%;
   background-color: #ffffff;
-  height: 80%;
 }
 
-.box-reveiw{
-  margin-bottom: 10px;
+.box-reveiw {
+  flex: 1;
   margin-right: 10px;
 }
 
-.text-title{
+.text-title {
   font-size: 1rem;
   color: black;
   border-bottom: 2px solid #8b60e5;
   padding-bottom: 10px;
 }
 
-.box-color{
-  width: 58%;
-  height: 80%;
+.box-color {
+  flex: 2;
   background-color: #8b60e5;
   color: white;
-  margin-bottom: 10px;
 }
 
-.box-color a{
+.box-color a {
   float: left;
 }
 
-.box-message{
+.box-message {
+  flex: 1;
   margin-right: 10px;
 }
 
-.box select{
+.box select {
   font-family: "shabnam", Tahoma, sans-serif;
   padding: 5px;
   color: #a3a3a3;
@@ -272,25 +292,23 @@ main {
   font-size: 0.8rem;
 }
 
-.box-white{
-  width: 58%;
-  height: 80%;
+.box-white {
+  flex: 2;
   color: white;
 }
 
-.row2{
-  height: 38%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.box .box-content{
+.row2 {
+  height: calc(50% - 119px);
   display: flex;
   justify-content: space-between;
 }
 
-.box-content1{
+.box .box-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-content1 {
   color: #a3a3a3;
   width: 80%;
   display: flex;
@@ -298,11 +316,11 @@ main {
   font-size: 0.8rem;
 }
 
-.box-content1 .box-number{
+.box-content1 .box-number {
   margin: 0 2px;
   font-size: 0.8rem;
-  padding: 5px;
+  padding: 4px 5px;
   color: #a3a3a3;
   background-color: #eeeeee;
-  border-radius: 50px;
+  border-radius: 40%;
 }
