@@ -54,12 +54,16 @@ main {
   margin-bottom: 50px;
 }
 
-.menu-content .clock time {
+.clock time {
   direction: ltr;
   display: inline-block;
   font-size: 2.5rem;
   margin-bottom: 10px;
   font-weight: 400;
+}
+
+.clock .bold{
+  font-weight: 900;
 }
 
 .user-info {
