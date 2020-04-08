@@ -30,7 +30,7 @@ main {
 
 .menu {
   width: 280px;
-  height: 100%;
+  height: 100vh;
   position: sticky;
   top: 0;
   right: 0;
@@ -142,12 +142,12 @@ main {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 150px;
 }
 
 .logo{
   width: 65px;
 }
+
 
 .menu-setting .dashboard {
   color: #6355e6;
@@ -352,12 +352,11 @@ main {
 .box {
   box-shadow: rgba(51, 49, 49, 0.1) 0.9px 0.9px 0.9px 0.9px;
   border-radius: 4px;
-  padding: 20px;
   background-color: #ffffff;
 }
 
 .box-reveiw {
-  flex: 1;
+  width: 40%;
   margin-right: 10px;
 }
 
@@ -369,7 +368,7 @@ main {
 }
 
 .box-color {
-  flex: 2;
+  width: 60%;
   background-color: #8b60e5;
   color: white;
 }
@@ -379,7 +378,7 @@ main {
 }
 
 .box-message {
-  flex: 1;
+  width: 40%;
   margin-right: 10px;
 }
 
@@ -393,8 +392,7 @@ main {
 }
 
 .box-white {
-  flex: 2;
-  color: white;
+  width: 60%;
 }
 
 .row2 {
@@ -408,19 +406,126 @@ main {
   justify-content: space-between;
 }
 
-.box-content1 {
+.header-box {
   color: #a3a3a3;
-  width: 80%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 0.8rem;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
-.box-content1 .box-number {
+.header-box .box-number {
   margin: 0 2px;
   font-size: 0.8rem;
   padding: 4px 5px;
   color: #a3a3a3;
   background-color: #eeeeee;
   border-radius: 40%;
+}
+
+.tabs a{
+  margin-left: 10px;
+}
+
+.table{
+  width: 100%;
+  table-layout: auto;
+}
+
+.table tr,th,td{
+  vertical-align: middle;
+}
+
+.img-container{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.table tr:nth-child(1){
+  color: #0d0a1a;
+  font-size: 0.9rem;
+  background-color: #f8f8f8;
+}
+
+.table th{
+  padding: 15px 5px;
+  font-weight: 600;
+}
+
+.table td{
+  padding: 10px 5px;
+}
+
+.col img{
+  width: 35px;
+  border-radius: 50%;
+}
+
+.blue-symbol{
+  width: 6px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #60c9f9;
+}
+
+.ticket-maker,
+.ticket-answer{
+  margin-bottom: 5px;
+}
+
+.ticket-title{
+  margin-bottom: 5px;
+}
+
+.ticket-container{
+  margin: 0 6px;
+}
+
+.ticket-maker-container{
+  display: flex;
+  align-items: center;
+}
+
+.ticket-title-sub,
+.ticket-time-creat,
+.ticket-time-answer{
+  font-size: .9rem;
+  color: #b1b1b1;
+}
+
+.square{
+  color: #eeeeee;
+}
+
+.priority-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.priority-symbol{
+  width: 15px;
+  height: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.priority-symbol span{
+  width: 100%;
+  height: 4px;
+  display: inline-block;
+  border-radius: 35px;
+}
+
+.lightblue1{
+  background-color: #dddcf9;
+}
+
+.blue1{
+  background-color: #6156e5;
 }
