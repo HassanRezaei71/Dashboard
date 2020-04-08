@@ -173,12 +173,96 @@ main {
   height: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: #ffffff;
 }
 
-.card-list .card .card-text {
+.card-text,
+.card-blue,
+.card-orange,
+.card-red{
   width: 100%;
   padding: 15px;
-  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.card-blue:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #6170e3;
+  transition: all .7s;
+  z-index: -1;
+}
+
+.card:hover .card-blue:before{
+  width: 100%;
+}
+
+.card-orange:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fdbf36;
+  transition: all .7s;
+  z-index: -1;
+}
+
+.card:hover .card-orange:before{
+  width: 100%;
+}
+
+.card-red:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #f3467c;
+  transition: all .7s;
+  z-index: -1;
+}
+
+.card:hover .card-red:before{
+  width: 100%;
+}
+
+.card-lightblue:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #25c2f7;
+  transition: all .7s;
+  z-index: -1;
+
+}
+
+.card:hover .card-lightblue:before{
+  width: 100%;
+}
+
+.card p,
+.card .text-blue,
+.card .text-green,
+.card .text-red{
+  transition-delay: .2s;
+}
+
+.card:hover p,
+.card:hover .text-blue,
+.card:hover .text-green,
+.card:hover .text-red{
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .card-list .card .card-icon {
