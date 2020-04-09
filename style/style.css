@@ -475,7 +475,9 @@ main {
 }
 
 .ticket-maker,
-.ticket-answer{
+.ticket-answer,
+.ticket-title{
+  font-size: 0.85rem;
   margin-bottom: 5px;
 }
 
@@ -495,7 +497,7 @@ main {
 .ticket-title-sub,
 .ticket-time-creat,
 .ticket-time-answer{
-  font-size: .9rem;
+  font-size: .8rem;
   color: #b1b1b1;
 }
 
@@ -506,9 +508,9 @@ main {
 .priority-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .priority-symbol{
@@ -536,4 +538,78 @@ main {
 
 th{
   text-align: right;
+}
+
+tr:not(:last-child){
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.table tr:hover:not(:first-child){
+  box-shadow: 0 0 6px #9a9a9ad4;
+}
+
+.message-item-container{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.message-item{
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+
+.image-messager{
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-messager img{
+  width: 60%;
+  border-radius: 50%;
+}
+
+.message-content{
+  width: 80%;
+  padding-left: 15px;
+}
+
+.message-user{
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.message-new-alert{
+  font-size: .7rem;
+  color: white;
+  padding: 2px 3px;
+  border-radius: 20px;
+  background-color: #f4365b;
+}
+
+.message-header{
+  display: flex;
+  color: #525252;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.message-time{
+  font-size: .8rem;
+}
+
+.message-title{
+  font-size: .9rem;
+  color: #525252;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.message-detail p{
+  font-size: .85rem;
+  line-height: 1.5;
+  text-align: justify;
 }
