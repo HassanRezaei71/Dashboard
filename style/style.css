@@ -411,7 +411,7 @@ main {
   justify-content: space-between;
   align-items: center;
   font-size: 0.8rem;
-  padding: 15px;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
@@ -555,6 +555,7 @@ tr:not(:last-child){
 
 .message-item{
   display: flex;
+  padding: 0 20px;
   margin-bottom: 30px;
   justify-content: space-around;
 }
@@ -574,7 +575,6 @@ tr:not(:last-child){
 
 .message-content{
   width: 80%;
-  padding-left: 15px;
 }
 
 .message-user{
