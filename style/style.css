@@ -98,14 +98,19 @@ main {
   justify-content: center;
 }
 
+.sub-list{
+  margin: 0;
+  padding-right: 40px;
+}
+
 .menu-setting ul {
   margin: 0;
+  padding: 0;
   width: 70%;
   font-size: .98rem;
 }
 
 .menu-setting ul li{
-  width: 85%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -115,12 +120,92 @@ main {
   margin-bottom: 25px;
 }
 
-.menu-setting ul li i.icon {
-  margin-right: -1.3em;
+.icon {
   margin-left: 0.9em;
 }
 
-.menu-setting ul li span.menu-num {
+.notification{
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification-icon,
+.search-icon,
+.search-input{
+  color: #d1d1d1;
+}
+
+.notification-info{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  padding: 5px;
+  font-size: 0.7rem;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f6355d;
+  z-index: 3;
+}
+
+.notification-icon{
+  width: 15px;
+  height: 15px;
+  font-size: 1.2rem;
+}
+
+.notification-content{
+  width: 50px;
+  position: relative;
+}
+
+.messate-notification,
+.bell-notification{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.search-input{
+  font-family: "shabnam","Tahoma",sans-serif;
+  width: 200px;
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+.search-input::placeholder{
+  color: #d1d1d1;
+}
+
+.search-icon{
+  margin-left: 10px;
+}
+
+.search-box{
+  width: calc(100% - 245px);
+  display: none;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  right: 230px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  transition: all .5s;
+  z-index: 3;
+}
+
+.symbol{
+  margin-right: 5px;
+}
+
+.science-item{
+  padding-right: 40px;
+}
+
+.menu-setting ul li span.menu-num{
   width: 1.1em;
   padding: 4px;
   font-size: 0.8rem;
@@ -129,6 +214,7 @@ main {
   border-radius: 8px;
   background-color: #f6355d;
 }
+
 
 .menu-setting ul li {
   color: #a3a3a3;
@@ -156,7 +242,7 @@ main {
 
 .main-content {
   flex-grow: 1;
-  margin-right: 280px;
+  margin-right: 230px;
   padding: 15px;
 }
 
@@ -288,6 +374,10 @@ main {
 
 .card-icon img {
   width: 80%;
+}
+
+.col1{
+  width: 1%;
 }
 
 .card .blue {
