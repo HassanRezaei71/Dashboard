@@ -198,7 +198,7 @@ main {
 }
 
 .symbol{
-  margin-right: 5px;
+  margin: 5px;
 }
 
 .science-item{
@@ -376,8 +376,24 @@ main {
   width: 80%;
 }
 
-.col1{
-  width: 1%;
+.col-1{
+  width: 10px;
+}
+
+.col-2{
+  width: 220px;
+}
+
+.col-3{
+  width: 135px;
+}
+
+.col-4{
+  width: 80px;
+}
+
+.col-5{
+  width: 150px;
 }
 
 .card .blue {
@@ -459,6 +475,11 @@ main {
   padding-bottom: 10px;
 }
 
+.text-title-star{
+  font-size: 1rem;
+  color: #d9d5d4;
+}
+
 .box-color {
   width: 60%;
   background-color: #8b60e5;
@@ -487,9 +508,14 @@ main {
   width: 60%;
 }
 
+.box-news{
+  width: 49.5%;
+}
+
 .row2 {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .box .box-content {
@@ -559,11 +585,19 @@ main {
   border-radius: 50%;
 }
 
-.blue-symbol{
+.blue-symbol,
+.green-symbol{
   width: 6px;
   height: 25px;
   border-radius: 20px;
+}
+
+.blue-symbol{
   background-color: #60c9f9;
+}
+
+.green-symbol{
+  background-color: #79f48a;
 }
 
 .ticket-maker,
@@ -600,9 +634,12 @@ main {
 .priority-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   font-size: 0.85rem;
+}
+
+.priority-symbol{
+  margin-left: 10px;
 }
 
 .priority-symbol{
@@ -624,6 +661,10 @@ main {
   background-color: #dddcf9;
 }
 
+.red{
+  background-color: #f74239;
+}
+
 .blue1{
   background-color: #6156e5;
 }
@@ -642,7 +683,7 @@ tr:not(:last-child){
 
 .message-item-container{
   width: 100%;
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 .message-item{
